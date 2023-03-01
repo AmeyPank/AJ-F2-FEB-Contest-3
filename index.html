@@ -4,12 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Editable Table</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
-<body style="background-color: black;">
-    <h1 style="color: white;">Dashboard</h1>
-    <button type="button" class="btn btn-secondary" style="background-color: black; color: white;">Add New Row</button>
-    <script src="script.js"></script>
+<body>
+    <div class="container">
+        <header>
+            <nav class="navbar">
+                <h4>Dashboard</h4>
+            </nav>
+        </header>
+        <div class="btnn">
+            <button id="btn">Add a New Row</button>
+        </div>
+        <div class="datatable">
+            <table>
+                 <thead>
+                    <tr class="head">
+                        <td>ID</td>
+                        <td>Student Name</td>
+                        <td>Student Roll</td>
+                        <td>Subject</td>
+                        <td>Marks</td>
+                        <td>Marked By</td>
+                        <td>Save</td>
+                    </tr>
+                 </thead>
+                 <tbody id="tablebody"></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="./script.js"></script>
 </body>
 </html>
